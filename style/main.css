@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkslateblue;
+}
+nav{
+    background-color: black;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    transition: all 1s linear;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+.active{
+    background-color: darkslateblue;
+    border-bottom: solid white;
+}
+nav ul li:hover{
+    background-color: darkslateblue;
+    border-bottom: solid white;
+}
+.page1>section{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    transition: all 2s linear;
+}
+.page1>section:hover{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+}
+.page2>section{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    transition-property: width, height, background-color, border;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s, 1s, 2s;
+}
+.page2>section:hover{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border: solid black 5px;
+}
+.page3>section{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    transition-property: width, height, background-color;
+    transition-duration: 1s;
+    transition-delay: 0s, 0s, 1s;
+}
+.page3>section>div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: darkslateblue;
+    transition-property: width, height, background-color, border-radius;
+    transition-duration: 1s;
+    transition-delay: 2s, 2s, 3s, 3s;
+}
+.page3>section:hover{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+}
+.page3>section:hover>div{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+}
+.page4>section{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    transition-property: width, height, background-color;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s, 2s;
+}
+.page4>section>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    transition-property: left, border-radius, background-color;
+    transition-duration: 1s;
+    transition-delay: 3s, 4s, 4s;
+}
+.page4>section>nav{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    transition-property: right, border-radius, background-color;
+    transition-duration: 1s;
+    transition-delay: 3s, 4s, 4s;
+}
+.page4>section:hover{
+    width: 350px;
+    height: 350px;
+    background-color: darkred;
+}
+.page4>section:hover>div{
+    left: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+.page4>section:hover>nav{
+    right: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+.page5>section{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    transition-property: background-color, width, height;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s, 2s;
+}
+.page5>section>div{
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    transition-property: top, right, border-radius;
+    transition-duration: 1s;
+    transition-delay: 3s, 3s, 4s;
+}
+.page5>section>footer{
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    transition-property: border-radius, background-color;
+    transition-duration: 1s;
+    transition-delay: 5s, 6s;
+}
+.page5>section>nav{
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    transition-property: bottom, left, border-radius;
+    transition-duration: 1s;
+    transition-delay: 3s, 3s, 4s;
+}
+.page5>section:hover{
+    background-color: darkred;
+    width: 350px;
+    height: 350px;
+}
+.page5>section:hover>div{
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+}
+.page5>section:hover>footer{
+    border-radius: 50%;
+    background-color: black;
+}
+.page5>section:hover>nav{
+    bottom: 20px;
+    left: 20px;
+    border-radius: 50%;
+}
+.page6>section{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    transition-property: width, height, border-top, border-right, border-bottom, border-left;
+    transition-duration: 1s;
+    transition-delay: 0s, 0s, 1s, 2s, 3s, 4s;
+}
+.page6>section>div{
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    transition-property: top, right, border-radius;
+    transition-duration: 1s;
+    transition-delay: 7s, 7s, 8s;
+}
+.page6>section>footer{
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    transition-property: border-radius, background-color;
+    transition-duration: 1s;
+    transition-delay: 13s, 14s;
+}
+.page6>section>nav{
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    transition-property: bottom, left, border-radius;
+    transition-duration: 1s;
+    transition-delay: 9s, 9s, 10s;
+}
+.page6>section>aside{
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    transition-property: top, left, border-radius;
+    transition-duration: 1s;
+    transition-delay: 5s, 5s, 6s;
+}
+.page6>section>article{
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    transition-property: bottom, right, border-radius;
+    transition-duration: 1s;
+    transition-delay: 11s, 11s, 12s;
+}
+.page6>section:hover{
+    width: 350px;
+    height: 350px;
+    border-top: solid darkred 5px;
+    border-right: solid darkred 5px;
+    border-bottom: solid darkred 5px;
+    border-left: solid darkred 5px;
+}
+.page6>section:hover>aside{
+    top: 30px;
+    left: 30px;
+    border-radius: 50%;
+}
+.page6>section:hover>div{
+    top: 30px;
+    right: 30px;
+    border-radius: 50%;
+}
+.page6>section:hover>nav{
+    bottom: 30px;
+    left: 30px;
+    border-radius: 50%;
+}
+.page6>section:hover>article{
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+}
+.page6>section:hover>footer{
+    border-radius: 50%;
+    background-color: darkred;
+}
